@@ -1,0 +1,5 @@
+.container {
+	margin: 0 auto;
+	width: 70%;
+	border: 2px solid red;
+}
