@@ -3,65 +3,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-            border: none;
-        }
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
 
-        body {
-            font-size: 14px;
-            font-family: 'Roboto', sans-serif;
-        }
-
-        .info-wrapper {
-            width: 400px;
-            height: 350px;
-            padding: 40px;
-            box-sizing: border-box;
-            margin: 0 auto;
-        }
-
-        .info-wrapper>h2 {
-            font-size: 30px;
-            color: #6A24FE;
-            margin-bottom: 20px;
-        }
-
-        .info-wrapper {
-            text-align: center;
-        }
-
-        .info-wrapper>input,
-        .info-wrapper>button {
-            width: 100%;
-            height: 48px;
-            padding: 0 10px;
-            box-sizing: border-box;
-            margin-bottom: 16px;
-            border-radius: 6px;
-            background-color: #d3d3d3;
-        }
-
-        .info-wrapper>input::placeholder {
-            color: #797979;
-        }
-
-        .info-wrapper>button[type="submit"] {
-            color: #fff;
-            font-size: 16px;
-            background-color: #6A24FE;
-            /* margin-top: 20px; */
-            cursor: pointer;
-        }
-        
-        .info-wrapper>button[type="reset"] {
-        	cursor: pointer;
-        }
-    </style>
+	<!-- CSS 연결 -->
+	<link href="${pageContext.request.contextPath}/resources/css/login/signUpForm.css" rel="stylesheet" type="text/css">
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+	<!-- JS 연결 -->
+	<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/login/signUpForm.js"></script>
 </head>
 <body>
 	<jsp:include page="/WEB-INF/views/include/header.jsp" />
@@ -82,7 +32,7 @@
         <!-- 유저 회원가입이니까 DB에서 mem_user 컬럼의 값을 자동으로 user 로 숨겨서 전달하기 -->
         <input type="hidden" name="member_user" value="user" />
 
-        <button type="submit" id="findPwdBtn">가입</button>
+        <button type="submit" id="signUpBtn">가입</button>
         <button type="reset" id="cancelBtn">취소</button>
     </form>
 </body>
