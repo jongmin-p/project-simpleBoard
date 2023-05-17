@@ -10,6 +10,21 @@ public class BoardController {
 		return "board/boardList";
 	}
 	
+	@GetMapping("/boardDetail")
+	public String boardDetail() {
+		return "board/boardDetail";
+	}
+	
+	@GetMapping("/insert")
+	public String insertBoard() {
+		return "board/insertBoard";
+	}
+	
+	@GetMapping("/update")
+	public String updateBoard() {
+		return "board/updateBoard";
+	}
+	
 	@GetMapping("/loginForm")
 	public String loginForm() {
 		return "login/loginForm";
