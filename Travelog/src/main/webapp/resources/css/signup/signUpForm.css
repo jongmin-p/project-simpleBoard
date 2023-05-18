@@ -52,3 +52,7 @@ body {
 .info-wrapper>button[type="reset"] {
 	cursor: pointer;
 }
+
+#msg {
+	color: red;
+}

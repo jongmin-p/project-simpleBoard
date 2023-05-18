@@ -7,14 +7,14 @@
 
 	<!-- CSS 연결 -->
 	<link
-		href="${pageContext.request.contextPath}/resources/css/board/insertBoard.css"
+		href="${pageContext.request.contextPath}/css/board/insertBoard.css"
 		rel="stylesheet" type="text/css">
 	<!-- Jquery -->
 	<script
 		src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 	<!-- JS 연결 -->
 	<script type="text/javascript"
-		src="${pageContext.request.contextPath}/resources/js/board/insertBoard.js"></script>
+		src="${pageContext.request.contextPath}/js/board/insertBoard.js"></script>
 </head>
 <body>
 	<jsp:include page="/WEB-INF/views/include/header.jsp" />

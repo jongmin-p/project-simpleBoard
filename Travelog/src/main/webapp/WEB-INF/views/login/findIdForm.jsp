@@ -7,11 +7,11 @@
 	<title>Insert title here</title>
 	
 	<!-- CSS 연결 -->
-	<link href="${pageContext.request.contextPath}/resources/css/login/findIdForm.css" rel="stylesheet" type="text/css">
+	<link href="${pageContext.request.contextPath}/css/login/findIdForm.css" rel="stylesheet" type="text/css">
     <!-- Jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 	<!-- JS 연결 -->
-	<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/login/findIdForm.js"></script>
+	<script type="text/javascript" src="${pageContext.request.contextPath}/js/login/findIdForm.js"></script>
 </head>
 
 

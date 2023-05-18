@@ -1,5 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
- 
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
+<c:set var="loginOutLink" value="${sessionScope.id == null ? '/login/login' : '/login/logout'}" />
+<c:set var="loginOut" value="${sessionScope.id == null ? 'Login' : 'Logout'}" />
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -68,25 +72,19 @@
 <body>
     <div class="header">
         <ul id="main-menu">
-            <li>
-                <a href="#">Home</a>
-            </li>
+            <li><a href="<c:url value='/'/>">Home</a></li>
+
+            <li><a href="<c:url value='/board/list'/>">Board</a></li>
 
             <li>
-                <a href="boardList">게시판</a>
-            </li>
-
-            <li>
-                <a href="#">마이페이지</a>
+                <a href="#">My Page</a>
                 <ul id="sub-menu">
-                    <li><a href="#">회원 정보 수정</a></li>
-                    <li><a href="#">기타 등등</a></li>
+                    <li><a href="#">My Profile</a></li>
+                    <li><a href="#">Etc</a></li>
                 </ul>
             </li>
 
-            <li>
-                <a href="loginForm">로그인</a>
-            </li>
+            <li><a href="<c:url value='${loginOutLink}'/>">${loginOut}</a></li>
         </ul>
     </div>
 </body>
