@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab58b9ce-eefa-4b89-b86c-06a4030f6299" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Travelog/src/main/java/com/proj/travelog/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Travelog/src/main/java/com/proj/travelog/HomeController.java" afterDir="false" />
+    <list default="true" id="9923c078-ab47-449b-9935-7c3476effefb" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,17 +25,17 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="useMavenConfig" value="true" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
-  <component name="ProjectId" id="2PyDgVJHgrkIaydmY7KOp5saxE1" />
+  <component name="ProjectId" id="2PyBh26Ebdjm9FLoDPI4VKxuQu3" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -45,30 +47,16 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
-      <setting name="path" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workDir" value="file://$PROJECT_DIR$" />
-      <setting name="debug" value="false" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Tomcat 9.0" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.65" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="restart-server" />
-      <deployment>
-        <artifact name="travelog:war">
-          <settings>
-            <option name="CONTEXT_PATH" value="/travelog_war" />
-          </settings>
-        </artifact>
-      </deployment>
+      <deployment />
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="fa5f12ce-caad-48ea-be2c-25f6911c1501" />
+        <option name="BASE_DIRECTORY_NAME" value="7a6b5b5f-35e9-401d-b97f-b5d9fca0b045" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -76,7 +64,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="65232" />
+        <option name="DEBUG_PORT" value="64996" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -125,21 +113,19 @@
       </ConfigurationWrapper>
       <method v="2">
         <option name="Make" enabled="true" />
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="travelog:war" />
-        </option>
       </method>
     </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ab58b9ce-eefa-4b89-b86c-06a4030f6299" name="Changes" comment="" />
-      <created>1684420541948</created>
+      <changelist id="9923c078-ab47-449b-9935-7c3476effefb" name="Changes" comment="" />
+      <created>1684419557757</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1684420541948</updated>
-      <workItem from="1684420543333" duration="874000" />
+      <updated>1684419557757</updated>
+      <workItem from="1684419559170" duration="602000" />
+      <workItem from="1684420173639" duration="32000" />
     </task>
     <servers />
   </component>
