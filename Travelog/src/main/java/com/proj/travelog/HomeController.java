@@ -9,4 +9,6 @@ public class HomeController {
 	public String home() {
 		return "index";
 	}
+	
+	// git 테스트
 }
