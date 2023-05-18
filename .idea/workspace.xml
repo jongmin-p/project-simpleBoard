@@ -5,12 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ab58b9ce-eefa-4b89-b86c-06a4030f6299" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Servers/Tomcat v9.0 Server at localhost-config/catalina.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Servers/Tomcat v9.0 Server at localhost-config/catalina.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Servers/Tomcat v9.0 Server at localhost-config/context.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Servers/Tomcat v9.0 Server at localhost-config/server.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Servers/Tomcat v9.0 Server at localhost-config/tomcat-users.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Servers/Tomcat v9.0 Server at localhost-config/web.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Travelog/src/main/java/com/proj/travelog/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Travelog/src/main/java/com/proj/travelog/HomeController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -145,7 +139,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1684420541948</updated>
-      <workItem from="1684420543333" duration="717000" />
+      <workItem from="1684420543333" duration="874000" />
     </task>
     <servers />
   </component>
