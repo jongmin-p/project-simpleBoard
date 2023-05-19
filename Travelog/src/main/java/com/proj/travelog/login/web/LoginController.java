@@ -7,6 +7,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import com.proj.travelog.signup.web.User;
+import com.proj.travelog.signup.web.UserDao;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -15,6 +18,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping("/login")
 public class LoginController {
+
+	@Autowired
+	UserDao userDao;
 
 	@GetMapping("/login")
 	public String login() {
@@ -99,6 +105,29 @@ public class LoginController {
 
 	
 	private boolean isValid(String id, String pwd) {
-		return "asdf".equals(id) && "1234".equals(pwd);
+		// return "asdf".equals(id) && "1234".equals(pwd);
+
+		User user = userDao.selectUser(id);
+		
+		// user 가 null 이면 없다는 뜻이니까 false 리턴
+		if(user == null) return false;
+
+		// user 가 null 이 아니면, 패스워드가 같아야 함 (그 결과를 return)
+		return user.getPwd().equals(pwd);
+	}
+
+
+	// 아이디 찾기
+	@GetMapping("findId")
+	public String findId() {
+
+		return "login/findIdForm";
+	}
+
+	// 비번 찾기
+	@GetMapping("findPwd")
+	public String findPwd() {
+
+		return "login/findPwdForm";
 	}
 }

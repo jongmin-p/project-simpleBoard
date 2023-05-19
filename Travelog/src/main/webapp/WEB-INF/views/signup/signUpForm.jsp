@@ -18,7 +18,7 @@
 <body>
 	<jsp:include page="/WEB-INF/views/include/header.jsp" />
 
-    <form action="<c:url value="/signup/save"/>" method="POST" onsubmit="return formCheck(this)" class="info-wrapper">
+    <form action="<c:url value="/signup/add"/>" method="POST" onsubmit="return formCheck(this)" class="info-wrapper">
         <h2>회원 가입</h2>
 	    <div id="msg" class="msg">
 	  	    <c:if test="${not empty param.msg}">

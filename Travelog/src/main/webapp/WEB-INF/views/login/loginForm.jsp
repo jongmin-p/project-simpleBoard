@@ -16,7 +16,7 @@
 </head>
   
 
-<body>
+<body>`
 	<jsp:include page="/WEB-INF/views/include/header.jsp" />
 	
     <form action="<c:url value='/login/login'/>" method="POST" class="login-wrapper">
@@ -42,10 +42,11 @@
 
         <div>
             <div class="info-wrapper">
-                <a href="findIdForm">ID 찾기</a> |
-                <a href="findPwdForm">비밀번호 찾기</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="<c:url value='/login/findId'/>">ID 찾기</a> |
+                <a href="<c:url value='/login/findPwd'/>">비밀번호 찾기</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <!-- Button trigger modal -->
-                <button type="button" id="signUpBtn" onClick="location.href='signUpForm'">회원가입</button>
+                <%-- <button type="button" id="signUpBtn" onClick="location.href='signup/add'">회원가입</button>     <-- 얘는 안 됨 --%>
+                <button type="button" id="signUpBtn" onclick="window.location.href='<c:url value='/signup/add'/>';">회원가입</button>
             </div>
         </div>
     </form>

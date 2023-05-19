@@ -22,8 +22,8 @@
 		<h2>아이디 찾기</h2>
 		<div id="errorMsg"></div> <!-- 여기다가 에러 메시지 출력 -->
 
-		<input type="text" id="mname" name="name" placeholder="이름을 입력하세요." required="required">
-		<input type="text" id="memail" name="email" placeholder="이메일을 입력하세요." required="required">
+		<input type="text" id="name" name="name" placeholder="이름을 입력하세요." required="required">
+		<input type="text" id="email" name="email" placeholder="이메일을 입력하세요." required="required">
 
 		<button type="submit" id="findIdBtn">아이디 찾기</button>
         <button type="reset" id="cancelBtn">취소</button>

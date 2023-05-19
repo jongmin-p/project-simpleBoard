@@ -20,9 +20,8 @@
 		<beans:property name="prefix" value="/WEB-INF/views/" />
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
-	
+
+	<view-controller path="/" view-name="index" />
+
 	<context:component-scan base-package="com.proj.travelog" />
-	
-	
-	
 </beans:beans>
