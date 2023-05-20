@@ -9,7 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b28b5e46-0185-4652-a03b-89a972b884ea" name="Changes" comment="[update] 디렉토리 재정리 &amp; 설정 변경 (~  lec 4-1 23:00)" />
+    <list default="true" id="b28b5e46-0185-4652-a03b-89a972b884ea" name="Changes" comment="[update] 디렉토리 재정리 &amp; 설정 변경 (~  lec 4-1 23:00)">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -279,7 +281,7 @@
       <workItem from="1684506846548" duration="1246000" />
       <workItem from="1684515189196" duration="5587000" />
       <workItem from="1684521469361" duration="142000" />
-      <workItem from="1684568077115" duration="296000" />
+      <workItem from="1684568077115" duration="737000" />
     </task>
     <task id="LOCAL-00001" summary="[update] 디렉토리 재정리 &amp; 설정 변경 (~  lec 4-1 23:00)">
       <created>1684568196851</created>
