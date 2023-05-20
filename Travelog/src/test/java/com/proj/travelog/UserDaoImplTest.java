@@ -1,7 +1,7 @@
 package com.proj.travelog;
 
-import com.proj.travelog.signup.web.User;
-import com.proj.travelog.signup.web.UserDao;
+import com.proj.travelog.domain.User;
+import com.proj.travelog.dao.UserDao;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

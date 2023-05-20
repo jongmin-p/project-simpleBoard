@@ -1,4 +1,4 @@
-package com.proj.travelog.board.web;
+package com.proj.travelog.controller;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;

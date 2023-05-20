@@ -1,5 +1,6 @@
-package com.proj.travelog.signup.web;
+package com.proj.travelog.dao;
 
+import com.proj.travelog.domain.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
@@ -145,6 +146,23 @@ public class UserDaoImpl implements UserDao {
         }
 
         return rowCnt;
+    }
+
+    // ch4 시작할 때 추가된 메서드
+    @Override
+    public int count() throws Exception {
+        String sql = "SELECT count(*) FROM user_info ";
+
+        try(
+                Connection conn = ds.getConnection();
+                PreparedStatement pstmt = conn.prepareStatement(sql);
+                ResultSet rs = pstmt.executeQuery();
+        ){
+            rs.next();
+            int result = rs.getInt(1);
+
+            return result;
+        }
     }
 
     public void deleteAll() throws Exception {

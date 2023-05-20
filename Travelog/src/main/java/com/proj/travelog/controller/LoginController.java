@@ -1,4 +1,4 @@
-package com.proj.travelog.login.web;
+package com.proj.travelog.controller;
 
 import java.net.URLEncoder;
 
@@ -7,8 +7,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import com.proj.travelog.signup.web.User;
-import com.proj.travelog.signup.web.UserDao;
+import com.proj.travelog.domain.User;
+import com.proj.travelog.dao.UserDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -104,11 +104,11 @@ public class LoginController {
 	}
 
 	
-	private boolean isValid(String id, String pwd) {
+	private boolean isValid(String id, String pwd) throws Exception {
 		// return "asdf".equals(id) && "1234".equals(pwd);
 
 		User user = userDao.selectUser(id);
-		
+
 		// user 가 null 이면 없다는 뜻이니까 false 리턴
 		if(user == null) return false;
 

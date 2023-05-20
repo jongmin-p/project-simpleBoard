@@ -1,4 +1,4 @@
-package com.proj.travelog.signup.web;
+package com.proj.travelog.domain;
 
 import java.util.Date;
 import java.util.Objects;

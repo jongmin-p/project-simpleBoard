@@ -1,6 +1,6 @@
 package com.proj.travelog;
 
-import com.proj.travelog.signup.web.User;          // signup.web 폴더에 있는 User 아님. (이건 예전 회원가입용)
+import com.proj.travelog.domain.User;          // signup.web 폴더에 있는 User 아님. (이건 예전 회원가입용)
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
