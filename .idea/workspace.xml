@@ -9,31 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b28b5e46-0185-4652-a03b-89a972b884ea" name="Changes" comment="0520 - 디렉토리 재정리 &amp; 설정 변경 (~  lec 4-1 23:00)">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023-05-18__11_42__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023-05-18__11_42__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Travelog/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Travelog/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Travelog/src/main/java/com/proj/travelog/DB/DBConnectionTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Travelog/src/main/java/com/proj/travelog/DB/DBConnectionTest2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Travelog/src/main/java/com/proj/travelog/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Travelog/src/main/java/com/proj/travelog/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Travelog/src/main/java/com/proj/travelog/board/web/BoardController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Travelog/src/main/java/com/proj/travelog/login/web/LoginController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Travelog/src/main/java/com/proj/travelog/signup/web/SignUpController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Travelog/src/main/java/com/proj/travelog/signup/web/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Travelog/src/main/java/com/proj/travelog/signup/web/UserDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Travelog/src/main/java/com/proj/travelog/signup/web/UserDaoImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Travelog/src/main/java/com/proj/travelog/signup/web/UserValidator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Travelog/src/main/resources/config/db.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Travelog/src/main/resources/config/mybatis-config.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Travelog/src/main/resources/log4j.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Travelog/src/main/resources/log4j.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Travelog/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Travelog/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Travelog/src/main/webapp/WEB-INF/spring/database-context.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Travelog/src/main/webapp/WEB-INF/spring/root-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Travelog/src/main/webapp/WEB-INF/spring/root-context.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Travelog/src/main/webapp/WEB-INF/views/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/Travelog/src/main/webapp/WEB-INF/views/home.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Travelog/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Travelog/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Travelog/src/test/java/com/proj/travelog/DBConnectionTest2Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/Travelog/src/test/java/com/proj/travelog/DBConnectionTest2Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Travelog/src/test/java/com/proj/travelog/UserDaoImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Travelog/src/test/java/com/proj/travelog/UserDaoImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Travelog/src/test/resources/log4j.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Travelog/src/test/resources/log4j.xml" afterDir="false" />
-    </list>
+    <list default="true" id="b28b5e46-0185-4652-a03b-89a972b884ea" name="Changes" comment="[update] 디렉토리 재정리 &amp; 설정 변경 (~  lec 4-1 23:00)" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -303,7 +279,16 @@
       <workItem from="1684506846548" duration="1246000" />
       <workItem from="1684515189196" duration="5587000" />
       <workItem from="1684521469361" duration="142000" />
+      <workItem from="1684568077115" duration="296000" />
     </task>
+    <task id="LOCAL-00001" summary="[update] 디렉토리 재정리 &amp; 설정 변경 (~  lec 4-1 23:00)">
+      <created>1684568196851</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1684568196851</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -319,6 +304,11 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="[update] 디렉토리 재정리 &amp; 설정 변경 (~  lec 4-1 23:00)" />
+    <MESSAGE value="commit on 0520 (~ lec 3-16)" />
+    <option name="LAST_COMMIT_MESSAGE" value="[update] 디렉토리 재정리 &amp; 설정 변경 (~  lec 4-1 23:00)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
