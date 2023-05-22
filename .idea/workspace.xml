@@ -19,9 +19,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit3 Test Class" />
+        <option value="JUnit4 Test Class" />
         <option value="Class" />
         <option value="Interface" />
-        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -85,6 +85,7 @@
       <recent name="junit.framework.TestCase" />
     </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.proj.travelog.service" />
       <recent name="com.proj.travelog.dao" />
       <recent name="com.proj.travelog" />
     </key>
@@ -92,13 +93,14 @@
       <recent name="com.proj.travelog" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.proj.travelog.domain" />
       <recent name="com.proj.travelog.dao" />
       <recent name="com.proj.travelog" />
       <recent name="com.proj.travelog.DB" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BoardDaoImplTest.select">
-    <configuration name="BoardDaoImplTest.select" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0">
+    <configuration name="BoardDaoImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="travelog" />
       <extension name="coverage">
         <pattern>
@@ -108,7 +110,70 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.proj.travelog.dao" />
       <option name="MAIN_CLASS_NAME" value="com.proj.travelog.dao.BoardDaoImplTest" />
-      <option name="METHOD_NAME" value="select" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BoardDaoImplTest.insertTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="travelog" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.proj.travelog.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.proj.travelog.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.proj.travelog.dao.BoardDaoImplTest" />
+      <option name="METHOD_NAME" value="insertTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BoardDaoImplTest.insertTestDate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="travelog" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.proj.travelog.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.proj.travelog.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.proj.travelog.dao.BoardDaoImplTest" />
+      <option name="METHOD_NAME" value="insertTestDate" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BoardDaoImplTest.selectPageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="travelog" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.proj.travelog.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.proj.travelog.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.proj.travelog.dao.BoardDaoImplTest" />
+      <option name="METHOD_NAME" value="selectPageTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PageHandlerTest.test444" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="travelog" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.proj.travelog.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.proj.travelog.domain" />
+      <option name="MAIN_CLASS_NAME" value="com.proj.travelog.domain.PageHandlerTest" />
+      <option name="METHOD_NAME" value="test444" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -188,7 +253,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BoardDaoImplTest.select" />
+        <item itemvalue="JUnit.PageHandlerTest.test444" />
+        <item itemvalue="JUnit.BoardDaoImplTest.insertTestDate" />
+        <item itemvalue="JUnit.BoardDaoImplTest" />
+        <item itemvalue="JUnit.BoardDaoImplTest.selectPageTest" />
+        <item itemvalue="JUnit.BoardDaoImplTest.insertTest" />
       </list>
     </recent_temporary>
   </component>
@@ -212,7 +281,10 @@
       <workItem from="1684568826189" duration="247000" />
       <workItem from="1684569354689" duration="2354000" />
       <workItem from="1684701611106" duration="1307000" />
-      <workItem from="1684731651019" duration="6347000" />
+      <workItem from="1684731651019" duration="6464000" />
+      <workItem from="1684743850086" duration="46000" />
+      <workItem from="1684753006712" duration="6052000" />
+      <workItem from="1684786349842" duration="10331000" />
     </task>
     <servers />
   </component>

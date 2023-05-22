@@ -98,13 +98,13 @@ tr>th:nth-child(5), tr>td:nth-child(5) {
 }
 
 /* 화살표 및 숫자들 설정 */
-.page li {
+.page a {
 	font-size: 18px;
 	font-weight: bolder;
 	margin: 0px 10px;
 	cursor: pointer;
 }
 
-.page li:hover {
+.page a:hover {
 	color: red;
 }

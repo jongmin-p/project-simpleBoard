@@ -44,8 +44,10 @@ public class BoardDaoImpl implements BoardDao {
     @Override
     public int delete(Integer bno, String writer) throws Exception {
         Map map = new HashMap();
+
         map.put("bno", bno);
         map.put("writer", writer);
+
         return session.delete(namespace + "delete", map);
     } // int delete(String statement, Object parameter)
 
@@ -53,6 +55,11 @@ public class BoardDaoImpl implements BoardDao {
     public List<BoardDto> selectAll() throws Exception {
         return session.selectList(namespace + "selectAll");
     } // List<E> selectList(String statement)
+
+    @Override
+    public List<BoardDto> selectPage(Map map) throws Exception {
+        return session.selectList(namespace + "selectPage", map);
+    } // List<E> selectList(String statement, Object parameter)
 
     @Override
     public int increaseViewCnt(Integer bno) throws Exception {

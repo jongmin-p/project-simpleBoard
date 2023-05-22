@@ -1,4 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c"   uri="http://java.sun.com/jsp/jstl/core" %>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -50,93 +51,15 @@
 
             <!-- ↓↓↓여기에 조회된 결과 출력 -->
             <tbody id="list">
-		    		<%-- <c:forEach items="${eqList }" var="eqm">
-						<tr class="eachRow">
-							<td>${eqm.idx }</td>
-							<td>${eqm.eqmFg }</td>
-							<td>${eqm.eqmNm }</td>
-							<td>${eqm.eqmCd }</td>
-							<td>${eqm.prcsNm }</td>
-							<td>${eqm.prcsCd }</td>					
-							<td>${eqm.eqmYn }</td>
-							<td>${eqm.minTemp }</td>
-							<td>${eqm.maxTemp }</td>
-							<td>${eqm.chckPerd }</td>
-							<td>${eqm.lineCd }</td>
-							<td><fmt:formatDate value="${eqm.eqmIstDt }" pattern="yyyy-MM-dd" /></td>
-							<td>${eqm.eqmPsch }</td>
-						</tr>
-					</c:forEach> --%>
-                <tr class="eachRow">
-                    <td>1</td>
-                    <td>제목입니다</td>
-                    <td>김팔춘</td>
-                    <td>2021-03-21</td>
-                    <td>5</td>
-                </tr>
-                <tr class="eachRow">
-                    <td>2</td>
-                    <td>제목입니다</td>
-                    <td>김팔춘</td>
-                    <td>2021-03-21</td>
-                    <td>5</td>
-                </tr>
-                <tr class="eachRow">
-                    <td>3</td>
-                    <td>제목입니다</td>
-                    <td>김팔춘</td>
-                    <td>2021-03-21</td>
-                    <td>5</td>
-                </tr>
-                <tr class="eachRow">
-                    <td>4</td>
-                    <td>제목입니다</td>
-                    <td>김팔춘</td>
-                    <td>2021-03-21</td>
-                    <td>5</td>
-                </tr>
-                <tr class="eachRow">
-                    <td>5</td>
-                    <td>제목입니다</td>
-                    <td>김팔춘</td>
-                    <td>2021-03-21</td>
-                    <td>5</td>
-                </tr>
-                <tr>
-	                <td>6</td>
-	                <td>제목입니다</td>
-	                <td>김팔춘</td>
-	                <td>2021-03-21</td>
-	                <td>5</td>
-                </tr>
-                <tr class="eachRow">
-                    <td>7</td>
-                    <td>제목입니다제목입니다제목입니다입니다</td>
-                    <td>김팔춘</td>
-                    <td>2021-03-21</td>
-                    <td>5</td>
-                </tr>
-                <tr class="eachRow">
-                    <td>8</td>
-                    <td>제목입니다</td>
-                    <td>김팔춘</td>
-                    <td>2021-03-21</td>
-                    <td>5</td>
-                </tr>
-                <tr class="eachRow">
-                    <td>9</td>
-                    <td>제목입니다</td>
-                    <td>김팔춘</td>
-                    <td>2021-03-21</td>
-                    <td>5</td>
-                </tr>
-                <tr class="eachRow">
-                    <td>10</td>
-                    <td>제목입니다</td>
-                    <td>김팔춘</td>
-                    <td>2021-03-21</td>
-                    <td>5</td>
-                </tr>
+                <c:forEach items="${li}" var="board">
+                    <tr class="eachRow">
+                        <td>${board.bno}</td>
+                        <td>${board.title}</td>
+                        <td>${board.writer}</td>
+                        <td>${board.reg_date}</td>
+                        <td>${board.view_cnt}</td>
+                    </tr>
+                </c:forEach>
             </tbody>
         </table>
 
@@ -144,20 +67,21 @@
             <button class="writeBtn">글쓰기</button>
         </div>
 
-        <ul class="page">
-            <li><</li>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
-            <li>6</li>
-            <li>7</li>
-            <li>8</li>
-            <li>9</li>
-            <li>10</li>
-            <li>></li>
-        </ul>
+
+        <%-- 페이지 네비게이션 바 --%>
+        <div class="page">
+            <c:if test="${ph.showPrev}">
+                <a href="<c:url value='/board/list?page=${ph.beginPage - 1}&pageSize=${ph.pageSize}' />"><<</a>
+            </c:if>
+
+            <c:forEach var="i" begin="${ph.beginPage}" end="${ph.endPage}">
+                <a href="<c:url value='/board/list?page=${i}&pageSize=${ph.pageSize}'/>">${i}</a>
+            </c:forEach>
+
+            <c:if test="${ph.showNext}">
+                <a href="<c:url value='/board/list?page=${ph.endPage + 1}&pageSize=${ph.pageSize}' />">>></a>
+            </c:if>
+        </div>
     </div>
 </body>
 </html>
