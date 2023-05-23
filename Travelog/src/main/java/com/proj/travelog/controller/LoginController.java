@@ -50,12 +50,9 @@ public class LoginController {
 		// 1. 유효성 검사 (id 와 비밀번호 일치하는지)
 		if(!isValid(id, pwd)) {
 			// 2-1. 일치하지 않으면 loginForm 으로 이동!
-			String msg = URLEncoder.encode("id 또는 비밀번호가 일치하지 않습니다!!!", "utf-8");
+			String msg = URLEncoder.encode("ID 또는 비밀번호가 일치하지 않습니다.", "utf-8");
 			return "redirect:/login/login?msg=" + msg;
-			
-			// 패스워드 일치하지 않을 때는 쿠키 만들면 안 됨!
 		}
-
 
 		
 		// 아이디/비번이 일치하면, Session 에다가도 id를 저장해주자  (BoardController 에서 쓸거임)

@@ -28,9 +28,6 @@ public class BoardController {
 	@GetMapping("/list")
 	public String list(Integer page, Integer pageSize, Model m, HttpServletRequest request) {
 		if(!loginCheck(request)) {
-			// 로그인 화면(login/login) 에게 GET 방식으로 board/list 라는 주소를 보냄.
-			// 여기서 board/list 라는 주소를 보내면, 이제 loginForm.jsp 에서 받아야 함.
-								// toURL 이란? (단지, loginForm.jsp 에서 받기 위한 파라미터명 설정인 듯)
 			return "redirect:/login/login?toURL=" + request.getRequestURL();
 		}
 
@@ -68,18 +65,11 @@ public class BoardController {
 		HttpSession session = request.getSession();
 		
 		// 2. 세션에 id 가 있는지 확인
-//		if(session.getAttribute("id") != null) {
-//			return true;
-//		} else {
-//			return false;
-//		}
-		
 		// 세션에 id 가 있으면 true 를, 없으면 false 를 반환  (로그인 시, LoginController 에서 세션을 저장해야 함)
 		return session.getAttribute("id") != null;
 	}
 	
-	
-	
+
 	@GetMapping("/detail")
 	public String boardDetail() {
 		return "board/boardDetail";

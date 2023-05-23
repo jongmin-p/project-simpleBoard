@@ -7,6 +7,6 @@ public interface UserDao {
     int deleteUser(String id) throws Exception;
     int insertUser(User user) throws Exception;
     int updateUser(User user) throws Exception;
-    int count() throws Exception;               // ch4 시작할 때 추가된 메서드
+    int count() throws Exception;
     void deleteAll() throws Exception;
 }

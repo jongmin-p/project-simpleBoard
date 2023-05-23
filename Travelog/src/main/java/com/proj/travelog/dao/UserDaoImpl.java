@@ -12,7 +12,8 @@ import java.sql.SQLException;
 import java.util.Date;
 
 // 이 UserDao 클래스는 저번 강의(3-14) 에서 만든 메서드들 다 모아 놓은 것이다. (그리고 예외 처리도 전부 try-catch 로 바꿈)
-@Repository      // TDD 에서 @Autowired 하려면  여기서 빈 등록 해야 함 (@Component)
+// TDD 에서 @Autowired 하려면  여기서 빈 등록 해야 함 (@Component)
+@Repository
 public class UserDaoImpl implements UserDao {
     @Autowired
     DataSource ds;
@@ -31,17 +32,13 @@ public class UserDaoImpl implements UserDao {
             conn = ds.getConnection();
             pstmt = conn.prepareStatement(sql);
             pstmt.setString(1, id);
-//        int rowCnt = pstmt.executeUpdate(); //  insert, delete, update
-//        return rowCnt;
+
             return pstmt.executeUpdate(); //  insert, delete, update
         } catch (SQLException e) {
             e.printStackTrace();
             return FAIL;
         } finally {
-            // close()를 호출하다가 예외가 발생할 수 있으므로, try-catch로 감싸야함.
-//            try { if(pstmt!=null) pstmt.close(); } catch (SQLException e) { e.printStackTrace();}
-//            try { if(conn!=null)  conn.close();  } catch (SQLException e) { e.printStackTrace();}
-            close(pstmt, conn); //     private void close(AutoCloseable... acs) {
+            close(pstmt, conn);
         }
     }
 
@@ -57,7 +54,7 @@ public class UserDaoImpl implements UserDao {
 
         try {
             conn = ds.getConnection();
-            pstmt = conn.prepareStatement(sql); // SQL Injection공격, 성능향상
+            pstmt = conn.prepareStatement(sql);
             pstmt.setString(1, id);
 
             rs = pstmt.executeQuery(); //  select
@@ -74,12 +71,7 @@ public class UserDaoImpl implements UserDao {
         } catch (SQLException e) {
             return null;
         } finally {
-            // close()를 호출하다가 예외가 발생할 수 있으므로, try-catch로 감싸야함.
-            // close()의 호출순서는 생성된 순서의 역순
-//            try { if(rs!=null)    rs.close();    } catch (SQLException e) { e.printStackTrace();}
-//            try { if(pstmt!=null) pstmt.close(); } catch (SQLException e) { e.printStackTrace();}
-//            try { if(conn!=null)  conn.close();  } catch (SQLException e) { e.printStackTrace();}
-            close(rs, pstmt, conn);  //     private void close(AutoCloseable... acs) {
+            close(rs, pstmt, conn);
         }
 
         return user;
@@ -93,8 +85,6 @@ public class UserDaoImpl implements UserDao {
         Connection conn = null;
         PreparedStatement pstmt = null;
 
-//        insert into user_info (id, pwd, name, email, phone, reg_date)
-//        values ('asdf22', '1234', 'smith', 'aaa@aaa.com', '2022-01-01', 'facebook', now());
         String sql = "insert into user_info values (?, ?, ?, ?, ?, now()) ";
 
         try {
@@ -120,14 +110,10 @@ public class UserDaoImpl implements UserDao {
     public int updateUser(User user) {
         int rowCnt = FAIL; //  insert, delete, update
 
-//        Connection conn = null;
-//        PreparedStatement pstmt = null;
-
         String sql = "update user_info " +
                 "set pwd = ?, name=?, phone=?, email=?, reg_date=? " +
                 "where id = ? ";
 
-        // try-with-resources - since jdk7
         try (
                 Connection conn = ds.getConnection();
                 PreparedStatement pstmt = conn.prepareStatement(sql); // SQL Injection공격, 성능향상

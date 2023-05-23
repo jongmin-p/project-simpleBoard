@@ -4,7 +4,6 @@ import java.util.Date;
 import java.util.Objects;
 
 // 여기에 있는 User 클래스는 강의 3-14 Spring 으로 DB 다루기  에서 쓰는 User 클래스.
-    // signup.web 폴더에 있는 User 클래스는 ch2 에서 사용했던 User 클래스.     (둘 다 있어야 함)
 public class User {
     private String id;
     private String pwd;

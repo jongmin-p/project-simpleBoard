@@ -7,8 +7,6 @@
 <body>
 	<jsp:include page="/WEB-INF/views/include/header.jsp" />
 
-	<h1>This is Home!!!!!</h1>
-	<h1>This is Home!!!!!</h1>
-	<h1>This is Home!!!!!</h1>
+	<h1 style="text-align: center">메인 페이지 입니다</h1>
 </body>
 </html>

@@ -27,15 +27,6 @@ public class SignUpController {
 	
 	@PostMapping("/add")
 	public String save(User user, BindingResult result, Model m) throws Exception {
-//		if(!isValid(user)) {
-//			String msg = URLEncoder.encode("이미 존재하는 아이디입니다~~~", "utf-8");
-//			m.addAttribute("msg", msg);
-//
-//			return "redirect:/signup/add";
-//		}
-//		return "signup/signUpInfo";
-
-
 		System.out.println("result=" + result);
 		System.out.println("user=" + user);
 
