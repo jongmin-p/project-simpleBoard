@@ -9,16 +9,139 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b28b5e46-0185-4652-a03b-89a972b884ea" name="Changes" comment="Added pagination (~ 4-4)">
+    <list default="true" id="b28b5e46-0185-4652-a03b-89a972b884ea" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/travelog_war.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/travelog_war_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_13_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_13_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_13_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_spullara_mustache_java_compiler_0_8_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_1_3_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_12_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_oracle_database_ha_ons_19_3_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_oracle_database_ha_simplefan_19_3_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_oracle_database_jdbc_ojdbc8_19_3_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_oracle_database_jdbc_ucp_19_3_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_oracle_database_security_oraclepki_19_3_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_oracle_database_security_osdt_cert_19_3_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_oracle_database_security_osdt_core_19_3_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_5_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_8_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_digester_commons_digester_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_inject_javax_inject_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jsp_jsp_api_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jstl_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jboss_javassist_3_7_ga.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ognl_ognl_2_7_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tiles_tiles_api_3_0_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tiles_tiles_autotag_core_runtime_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tiles_tiles_compat_3_0_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tiles_tiles_core_3_0_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tiles_tiles_el_3_0_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tiles_tiles_extras_3_0_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tiles_tiles_freemarker_3_0_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tiles_tiles_jsp_3_0_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tiles_tiles_mvel_3_0_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tiles_tiles_ognl_3_0_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tiles_tiles_request_api_1_0_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tiles_tiles_request_freemarker_1_0_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tiles_tiles_request_jsp_1_0_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tiles_tiles_request_mustache_1_0_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tiles_tiles_request_servlet_1_0_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tiles_tiles_request_servlet_wildcard_1_0_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tiles_tiles_request_velocity_1_0_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tiles_tiles_servlet_3_0_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tiles_tiles_template_3_0_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tiles_tiles_velocity_3_0_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_velocity_velocity_1_6_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_velocity_velocity_tools_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjrt_1_9_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bgee_log4jdbc_log4j2_log4jdbc_log4j2_jdbc4_1_1_16.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_freemarker_freemarker_2_3_15.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mvel_mvel2_2_0_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_5_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_2_0_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_24.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_6_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_6_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_3_16.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_3_16.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_3_16.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_3_16.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_3_16.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_3_16.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_3_16.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_3_16.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_3_16.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_3_16.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_3_16.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__oro_oro_2_0_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/apache_tomcat_9_0_library.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023-05-18__11_42__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023-05-18_오후_11_42_[Changes]/shelved.patch" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Travelog/src/main/java/com/proj/travelog/controller/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Travelog/src/main/java/com/proj/travelog/controller/BoardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Travelog/src/main/java/com/proj/travelog/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Travelog/src/main/java/com/proj/travelog/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Travelog/src/main/java/com/proj/travelog/controller/SignUpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Travelog/src/main/java/com/proj/travelog/controller/SignUpController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Travelog/src/main/java/com/proj/travelog/dao/BoardDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/Travelog/src/main/java/com/proj/travelog/dao/BoardDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Travelog/src/main/java/com/proj/travelog/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/Travelog/src/main/java/com/proj/travelog/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Travelog/src/main/java/com/proj/travelog/dao/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Travelog/src/main/java/com/proj/travelog/dao/UserDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Travelog/src/main/java/com/proj/travelog/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/Travelog/src/main/java/com/proj/travelog/domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Travelog/src/main/webapp/WEB-INF/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/Travelog/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Travelog/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Travelog/src/main/java/com/proj/travelog/HomeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Travelog/src/main/java/com/proj/travelog/PerformanceFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Travelog/src/main/java/com/proj/travelog/controller/BoardController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Travelog/src/main/java/com/proj/travelog/controller/LoginController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Travelog/src/main/java/com/proj/travelog/controller/SignUpController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Travelog/src/main/java/com/proj/travelog/dao/BoardDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Travelog/src/main/java/com/proj/travelog/dao/BoardDaoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Travelog/src/main/java/com/proj/travelog/dao/UserDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Travelog/src/main/java/com/proj/travelog/dao/UserDaoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Travelog/src/main/java/com/proj/travelog/domain/BoardDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Travelog/src/main/java/com/proj/travelog/domain/PageHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Travelog/src/main/java/com/proj/travelog/domain/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Travelog/src/main/java/com/proj/travelog/service/BoardService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Travelog/src/main/java/com/proj/travelog/service/BoardServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Travelog/src/main/resources/log4j.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Travelog/src/main/resources/log4jdbc.log4j2.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Travelog/src/main/resources/mapper/boardMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Travelog/src/main/resources/mybatis-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Travelog/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Travelog/src/main/webapp/WEB-INF/spring/root-context.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Travelog/src/main/webapp/WEB-INF/views/board/boardDetail.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Travelog/src/main/webapp/WEB-INF/views/board/boardList.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Travelog/src/main/webapp/WEB-INF/views/board/insertBoard.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Travelog/src/main/webapp/WEB-INF/views/board/updateBoard.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Travelog/src/main/webapp/WEB-INF/views/home.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Travelog/src/main/webapp/WEB-INF/views/include/header.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Travelog/src/main/webapp/WEB-INF/views/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Travelog/src/main/webapp/WEB-INF/views/login/findIdForm.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Travelog/src/main/webapp/WEB-INF/views/login/findPwdForm.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Travelog/src/main/webapp/WEB-INF/views/login/loginForm.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Travelog/src/main/webapp/WEB-INF/views/signup/signUpForm.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Travelog/src/main/webapp/WEB-INF/views/signup/signUpInfo.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Travelog/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Travelog/src/main/webapp/resources/css/board/boardDetail.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Travelog/src/main/webapp/resources/css/board/boardList.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Travelog/src/main/webapp/resources/css/board/insertBoard.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Travelog/src/main/webapp/resources/css/board/updateBoard.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Travelog/src/main/webapp/resources/css/login/findIdForm.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Travelog/src/main/webapp/resources/css/login/findPwdForm.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Travelog/src/main/webapp/resources/css/login/loginForm.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Travelog/src/main/webapp/resources/css/signup/signUpForm.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Travelog/src/main/webapp/resources/js/board/boardDetail.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Travelog/src/main/webapp/resources/js/board/boardList.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Travelog/src/main/webapp/resources/js/board/insertBoard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Travelog/src/main/webapp/resources/js/board/updateBoard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Travelog/src/main/webapp/resources/js/login/findIdForm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Travelog/src/main/webapp/resources/js/login/findPwdForm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Travelog/src/main/webapp/resources/js/login/loginForm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Travelog/src/main/webapp/resources/js/signup/signUpForm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Travelog/src/test/java/com/proj/travelog/DBConnectionTest2Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Travelog/src/test/java/com/proj/travelog/UserDaoImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Travelog/src/test/java/com/proj/travelog/dao/BoardDaoImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Travelog/src/test/java/com/proj/travelog/domain/PageHandlerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Travelog/src/test/resources/log4j.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +201,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/com/proj/travelog" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../tomcat9/lib" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/resources/js/board" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -89,6 +212,11 @@
       <recent name="com.proj.travelog.domain" />
       <recent name="com.proj.travelog.signup.web" />
       <recent name="com.proj.travelog" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\J.M.PARK\IdeaProjects\simpleBoard\src\main\webapp\resources\js\board" />
+      <recent name="C:\Users\J.M.PARK\IdeaProjects\simpleBoard\src\main\webapp\resources\css\board" />
+      <recent name="C:\Users\J.M.PARK\IdeaProjects\simpleBoard\src\main\webapp\WEB-INF\views\board" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -190,7 +318,8 @@
       </method>
     </configuration>
     <configuration name="Tomcat 9.0" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.65" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="UPDATING_POLICY" value="restart-server" />
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <deployment>
         <artifact name="travelog:war exploded">
           <settings>
@@ -261,6 +390,14 @@
         </option>
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JUnit.BoardDaoImplTest" />
+      <item itemvalue="JUnit.BoardDaoImplTest.insertTest" />
+      <item itemvalue="JUnit.BoardDaoImplTest.insertTestDate" />
+      <item itemvalue="JUnit.BoardDaoImplTest.selectPageTest" />
+      <item itemvalue="JUnit.PageHandlerTest.test444" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.PageHandlerTest.test444" />
@@ -295,36 +432,18 @@
       <workItem from="1684743850086" duration="46000" />
       <workItem from="1684753006712" duration="6052000" />
       <workItem from="1684786349842" duration="10331000" />
-      <workItem from="1684797170282" duration="191000" />
-      <workItem from="1684805706425" duration="317000" />
+      <workItem from="1684797012515" duration="139000" />
+      <workItem from="1684797374068" duration="193000" />
+      <workItem from="1684805314134" duration="372000" />
+      <workItem from="1684806144723" duration="289000" />
+      <workItem from="1684843203936" duration="17328000" />
+      <workItem from="1684926810361" duration="10508000" />
+      <workItem from="1684938430658" duration="675000" />
     </task>
-    <task id="LOCAL-00001" summary="Added pagination (~ 4-4)">
-      <created>1684797283064</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1684797283064</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added pagination (~ 4-4)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added pagination (~ 4-4)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
