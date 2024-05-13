@@ -1,0 +1,76 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+body {
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+}
+
+/* 로그인 폼 컨테이너 */
+.login-wrapper {
+    width: 400px;
+    height: 350px;
+    padding: 40px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+/* 로그인 헤더 글씨 */
+.login-wrapper>h2 {
+    font-size: 30px;
+    color: #6a24fe;
+    margin-bottom: 20px;
+}
+
+/* 로그인 헤더 글씨 및 아이디 저장 버튼 정렬 */
+.login-wrapper {
+    text-align: center;
+}
+
+/* 로그인 페이지 내의 아이디/비번 입력 창 */
+.login-wrapper>input[type="text"], .login-wrapper>input[type="password"]
+{
+    width: 100%;
+    height: 48px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    border-radius: 6px;
+    background-color: #d3d3d3;
+}
+
+/* 아이디/비번 입력창 내 글씨 */
+.login-wrapper>input::placeholder {
+    color: #797979;
+}
+
+/* 로그인 버튼 */
+.login-wrapper>input[type="submit"] {
+    width: 100%;
+    height: 48px;
+    padding: 0 10px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    color: #fff;
+    font-size: 16px;
+    background-color: #6a24fe;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/* ID 찾기 / 비밀번호 찾기 */
+.info-wrapper>a {
+    text-decoration: none;
+}
+
+#signUpBtn {
+    border: 1px solid rgb(42, 129, 243);
+    color: rgb(42, 129, 243);
+    background-color: white;
+    padding: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+}
