@@ -19,7 +19,7 @@ public class UserDaoImpl implements UserDao {
     }
 
     @Override
-    public String select(String userId) throws Exception {
+    public UserDto select(String userId) throws Exception {
         return session.selectOne(namespace + "select", userId);
     }
 }

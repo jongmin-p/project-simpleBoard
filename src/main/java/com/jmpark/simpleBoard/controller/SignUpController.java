@@ -7,7 +7,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
-import javax.servlet.http.HttpServletRequest;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -23,35 +22,6 @@ public class SignUpController {
         return "signup/signUpForm";
     }
 
-
-//    @PostMapping("")
-//    public String signUp(HttpServletRequest request) throws Exception {
-//        String userId    = request.getParameter("id");
-//        String userPwd   = request.getParameter("pwd");
-//        String userName  = request.getParameter("name");
-//        String userPhone = request.getParameter("phone");
-//        String userEmail = request.getParameter("email");
-//        char status = request.getParameter("status").charAt(0);
-//        char isUser = request.getParameter("isUser").charAt(0);
-//
-//        UserDto userDto = new UserDto();
-//        userDto.setUserId(userId);
-//        userDto.setUserPwd(userPwd);
-//        userDto.setUserName(userName);
-//        userDto.setUserPhone(userPhone);
-//        userDto.setUserEmail(userEmail);
-//        userDto.setStatus(status);
-//        userDto.setIsUser(isUser);
-//
-//        userService.write(userDto);
-//
-//        return "signUpSuccess";
-//    }
-
-
-    // 위의 코드는 손으로 직접 request.getParameter 으로 꺼내와서 setter 로 UserDto 에 입력시킨 거고,
-// 아래는 @ModelAttribute 를 이용해서 자동으로 바인딩 되도록 함.
-    // 대신 @ModelAttribute 쓰려면, jsp 파일에서 input 태그의 name 명을 userDto 의 변수명이랑 일치시켜야 함.
     @PostMapping("")
     public String signUp(@ModelAttribute("userDto") UserDto userDto, Model m) throws Exception {
         userService.write(userDto);
@@ -66,25 +36,19 @@ public class SignUpController {
     @PostMapping("/idCheck")
     @ResponseBody
     public String idCheck(@RequestParam("id") String id) throws Exception {
-//        System.out.println("req => " + req);
-//
-//        String id = req.getParameter("id");
-
-        System.out.println("id => " + id);
-
 
         // 사용자가 입력한 아이디가 기존에 있는 아이디인지 검사
-        String searchResult = userService.read(id);
+        UserDto searchResult = userService.read(id);
 
         // 아이디 입력 칸에 아무것도 입력 안했을 때
         if (id.equals("")) {
             return "{\"retCode\" : \"Blank\"}";
 
-            // 아이디가 정규식에 부합하지 않을 때
+        // 아이디가 정규식에 부합하지 않을 때
         } else if (!regexCheck(id)) {
             return "{\"retCode\" : \"RegexCheck\"}";
 
-            // 아이디가 중복일 때 (이미 해당 아이디가 존재할 때)
+        // 아이디가 중복일 때 (이미 해당 아이디가 존재할 때)
         } else if (searchResult != null) {
             return "{\"retCode\" : \"Fail\"}";
         }

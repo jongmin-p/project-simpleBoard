@@ -17,7 +17,7 @@ public class UserServiceImpl implements UserService {
        }
 
        @Override
-       public String read(String userId) throws Exception {
+       public UserDto read(String userId) throws Exception {
               return userDao.select(userId);
        }
 }
