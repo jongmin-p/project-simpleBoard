@@ -4,7 +4,11 @@ import com.jmpark.simpleBoard.domain.UserDto;
 import com.jmpark.simpleBoard.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServletResponse;
 
 @Controller
 @RequestMapping("/login")
@@ -18,7 +22,31 @@ public class LoginController {
     }
 
     @PostMapping("")
-    public String login() {
+    public String login(@ModelAttribute("userDto") UserDto userDto, boolean rememberId, HttpServletResponse response, Model m) {
+
+        m.addAttribute("id", userDto.getUserId());
+
+        System.out.println("userDto.getUserId() => " + userDto.getUserId());
+        System.out.println("userDto.getUserPwd() => " + userDto.getUserPwd());
+        System.out.println("rememberId => " + rememberId);
+
+        if(rememberId) {    // 아이디 및 비밀번호가 일치하면서,   아이디 기억하기(rememberId) 에 체크돼 있다면,
+            // 쿠키 생성
+            Cookie cookie = new Cookie("id", userDto.getUserId());
+
+            // 응답에 쿠키를 추가해서 브라우저로 전송.
+            response.addCookie(cookie);
+        } else {            // 반면, 아이디 / 비밀번호는 일치하지만, 아이디 기억하기(rememberId) 에 체크가 "안" 돼 있다면
+            // 쿠키 생성하
+            Cookie cookie = new Cookie("id", userDto.getUserId());
+
+            // 쿠키 삭제 (유효 시간을 0, 혹시 있을 쿠키 삭제)
+            cookie.setMaxAge(0);
+
+            // 응답에 쿠키를 추가해서 브라우저로 전송
+            response.addCookie(cookie);
+        }
+
         return "index";
     }
 

@@ -12,5 +12,12 @@
 <body>
     <jsp:include page="/WEB-INF/views/include/header.jsp" />
 
-    <h1 style="text-align: center">Welcome to the Main Page!</h1>
+    <c:choose>
+        <c:when test="${not empty id}">
+            <h1 style="text-align: center; color: green">${id} 님, 반갑습니다!</h1>
+        </c:when>
+        <c:otherwise>
+            <h1 style="text-align: center">Welcome to the Main Page!</h1>
+        </c:otherwise>
+    </c:choose>
 </body>

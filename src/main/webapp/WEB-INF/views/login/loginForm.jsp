@@ -19,11 +19,11 @@
     <h2>로그인</h2>
 
     <div class="msg"></div>
-    <input type="text" name="userId"      placeholder="ID를 입력하세요" />
+    <input type="text" name="userId"      placeholder="ID를 입력하세요"      value="${cookie.id.value}" />
     <input type="password" name="userPwd" placeholder="비밀번호를 입력하세요" />
 
     <label for="rememberId">
-        <input type="checkbox" id="rememberId" name="rememberId" > 아이디 저장
+        <input type="checkbox" id="rememberId" name="rememberId" ${empty cookie.id.value ? "" : "checked"}> 아이디 저장
     </label>
 
     <input type="submit" id="loginBtn" value="로그인" />
