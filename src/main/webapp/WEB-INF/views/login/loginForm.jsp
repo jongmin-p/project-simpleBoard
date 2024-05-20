@@ -22,6 +22,8 @@
     <input type="text" name="userId"      placeholder="ID를 입력하세요"      value="${cookie.id.value}" />
     <input type="password" name="userPwd" placeholder="비밀번호를 입력하세요" />
 
+    <input type="hidden" name="toURL" value="${param.toURL}" />
+
     <label for="rememberId">
         <input type="checkbox" id="rememberId" name="rememberId" ${empty cookie.id.value ? "" : "checked"}> 아이디 저장
     </label>

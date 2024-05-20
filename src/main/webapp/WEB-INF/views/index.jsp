@@ -13,8 +13,8 @@
     <jsp:include page="/WEB-INF/views/include/header.jsp" />
 
     <c:choose>
-        <c:when test="${not empty id}">
-            <h1 style="text-align: center; color: green">${id} 님, 반갑습니다!</h1>
+        <c:when test="${not empty welcomeId}">
+            <h1 style="text-align: center; color: green">${welcomeId} 님, 반갑습니다!</h1>
         </c:when>
         <c:otherwise>
             <h1 style="text-align: center">Welcome to the Main Page!</h1>

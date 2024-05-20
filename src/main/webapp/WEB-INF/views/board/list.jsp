@@ -13,6 +13,8 @@
 </head>
 
 <body>
+    <jsp:include page="/WEB-INF/views/include/header.jsp" />
+
     <h1>여기는 Board List 페이지입니다. (게시글 전체 목록)</h1>
 </body>
 </html>
