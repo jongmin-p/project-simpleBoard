@@ -25,8 +25,8 @@ public class BoardController {
     @GetMapping("/list")
     public String list(Integer page, Integer pageSize, Model m, HttpServletRequest request) {
 
-        // "Board" 탭을 눌렀을때
-        // 로그인 체크해서, 로그인 안했다면, /login 페이지로 이동
+        // 유저가 "Board" 탭을 눌렀을 때,
+        // 로그인 체크한 뒤    만약 로그인 안 했다면, /login 페이지로 이동
         if(!loginCheck(request)) {
             return "redirect:/login?toURL=" + request.getRequestURL();
         }
@@ -47,7 +47,6 @@ public class BoardController {
             int totalCnt = boardService.getCount();
             PageHandler pageHandler = new PageHandler(totalCnt, page, pageSize);
 
-
             Map map = new HashMap();
 
             // boardMapper.xml 에서   select id="selectPage"  참고 (여기서 Map 으로 넘겨줌)
@@ -56,11 +55,11 @@ public class BoardController {
 
             List<BoardDto> list = boardService.getPage(map);
 
-            // 이제 list 를 모델에 담아서 뷰로 보내야겠지?
+            // 이제 list 를 모델에 담아서 뷰로 전송
             m.addAttribute("list", list);
             m.addAttribute("ph", pageHandler);
-            m.addAttribute("page", page);           // 이 2개를 boardList.jsp 로 넘겨줘야,  게시글 에서 목록 버튼 클릭 시, 그 게시판으로 돌아갈 수 있다?
-            m.addAttribute("pageSize", pageSize);   // 이 2개를 boardList.jsp 로 넘겨줘야,  게시글 에서 목록 버튼 클릭 시, 그 게시판으로 돌아갈 수 있다?
+            m.addAttribute("page", page);
+            m.addAttribute("pageSize", pageSize);
         } catch (Exception e) {
             e.printStackTrace();
         }

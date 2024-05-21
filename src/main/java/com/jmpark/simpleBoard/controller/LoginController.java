@@ -36,7 +36,7 @@ public class LoginController {
     public String login(@ModelAttribute("userDto") UserDto userDto, boolean rememberId, String toURL, Model m,
                                                         HttpServletRequest request, HttpServletResponse response) {
 
-        m.addAttribute("welcomeId", userDto.getUserId());
+        // m.addAttribute("welcomeId", userDto.getUserId());
 
         System.out.println("userDto.getUserId() => " + userDto.getUserId());
         System.out.println("userDto.getUserPwd() => " + userDto.getUserPwd());
