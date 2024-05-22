@@ -1,0 +1,109 @@
+/*!* 전체 너비 (부모가 body) *!*/
+/*.container {*/
+/*    margin: 0 auto;*/
+/*    width: 70%;*/
+/*}*/
+
+/*!* 검색창 *!*/
+/*#searchBar {*/
+/*    !* <div> 클래스 공간 중 끝(오른쪽)으로 *!*/
+/*    text-align: end;*/
+/*}*/
+
+/*#searchBtn {*/
+/*    color: #fff;*/
+/*    font-size: 13px;*/
+/*    background: grey;*/
+/*    border: none;*/
+/*    padding: 6px;*/
+/*    border-radius: 4px;*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*!* 테이블 너비 (부모가 container) *!*/
+/*table {*/
+/*    width: 100%;*/
+/*}*/
+
+/*tr {*/
+/*    display: flex;*/
+/*    padding: 5px 0px;*/
+/*}*/
+
+/*thead tr {*/
+/*    background-color: lightgreen;*/
+/*}*/
+
+/*tbody tr:hover {*/
+/*    background-color: lightgray;*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*!* cell 별로 간격 조절했음 *!*/
+/*tr>th:nth-child(1), tr>td:nth-child(1) {*/
+/*    flex-basis: 8%;*/
+/*    !* border: 1px solid blue; *!*/
+/*    text-align: center;*/
+/*}*/
+
+/*tr>th:nth-child(2), tr>td:nth-child(2) {*/
+/*    flex-basis: 54%;*/
+/*    !* border: 1px solid blue; *!*/
+/*    padding-left: 20px;*/
+/*}*/
+
+/*tr>th:nth-child(3), tr>td:nth-child(3) {*/
+/*    flex-basis: 15%;*/
+/*    !* border: 1px solid blue; *!*/
+/*    text-align: center;*/
+/*}*/
+
+/*tr>th:nth-child(4), tr>td:nth-child(4) {*/
+/*    flex-basis: 15%;*/
+/*    !* border: 1px solid blue; *!*/
+/*    text-align: center;*/
+/*}*/
+
+/*tr>th:nth-child(5), tr>td:nth-child(5) {*/
+/*    flex-basis: 8%;*/
+/*    !* border: 1px solid blue; *!*/
+/*    text-align: center;*/
+/*}*/
+
+/*!* 글쓰기 버튼 위치 조절용 부모 태그 (button 이 inline 이라서 이렇게 썼음) *!*/
+/*.writeBtn {*/
+/*    display: flex;*/
+/*    justify-content: flex-end;*/
+/*}*/
+
+/*.writeBtn button {*/
+/*    color: #fff;*/
+/*    font-size: 13px;*/
+/*    background: #333;*/
+/*    border: none;*/
+/*    padding: 6px;*/
+/*    border-radius: 4px;*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*!* 페이지 숫자 정렬 *!*/
+/*.page {*/
+/*    background-color: yellow;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    list-style: none;*/
+/*    margin-top: 30px;*/
+/*    padding: 10px 0px;*/
+/*}*/
+
+/*!* 화살표 및 숫자들 설정 *!*/
+/*.page a {*/
+/*    font-size: 18px;*/
+/*    font-weight: bolder;*/
+/*    margin: 0px 10px;*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*.page a:hover {*/
+/*    color: red;*/
+/*}*/

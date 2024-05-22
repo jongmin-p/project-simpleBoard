@@ -11,11 +11,8 @@ import java.util.Map;
 @Service
 public class BoardServiceImpl implements BoardService {
 
-    // 깃에서 다 복붙한거임.
-    // 여기선 딱히 Transaction 처리해줄 것이 없기 때문에, try-catch 없이 그냥 컨트롤러로 에러를 던짐.
-
     @Autowired
-    BoardDao boardDao;          // BoardDao 주입 받기 (실제로는 BoardDaoImpl)
+    BoardDao boardDao;
 
 
     @Override
@@ -31,14 +28,19 @@ public class BoardServiceImpl implements BoardService {
         return boardDao.selectAll();
     }
 
-    // 페이징 처리 메서드
     @Override
-    public List<BoardDto> getPage(Map map) throws Exception {
-        return boardDao.selectPage(map);
+    public int remove(Integer boardNo, String writer) throws Exception {
+        return boardDao.delete(boardNo, writer);
     }
 
     @Override
     public int getCount() throws Exception {
         return boardDao.count();
+    }
+
+    // 페이징 처리 메서드
+    @Override
+    public List<BoardDto> getPage(Map map) throws Exception {
+        return boardDao.selectPage(map);
     }
 }

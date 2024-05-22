@@ -1,0 +1,81 @@
+/* 전체 너비 (부모가 body) */
+.container {
+    margin: 0 auto;
+    width: 70%;
+    border: 1px solid red;
+}
+
+h2, h3 {
+    text-align: center;
+    /*color: red;*/
+}
+
+/* 제목, 내용, 작성자 중앙 정렬 */
+.title, .content, .writer {
+    text-align: center;
+}
+
+/* 작성자(writer) */
+.writer input {
+    width: 70%;
+    padding: 5px 0px;
+    border: none;
+    background-color: darkorchid;
+    margin-bottom: 30px;
+}
+
+input[name="writer"] {
+    padding: 20px;
+    color: yellowgreen;
+    text-align: center;
+    font-weight: bolder;
+    font-size: large;
+}
+
+
+/* 제목 인풋 창 */
+.title input {
+    width: 70%;
+    padding: 5px 0px;
+    border: none;
+    background-color: lightblue;
+    margin-bottom: 30px;
+}
+
+/* 글쓰는 바디 창 */
+.content textarea {
+    width: 70%;
+    height: 300px;
+    background-color: yellow;
+    border: none;
+    resize: none;
+    margin-bottom: 30px;
+
+    padding: 20px;
+    font-weight: bolder;
+    font-size: large;
+}
+
+/* 버튼 정렬 */
+.button {
+    text-align: center;
+}
+
+/* 버튼들 꾸밈 */
+.button button {
+    color: #fff;
+    font-size: 13px;
+    background: green;
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[name="title"] {
+    padding: 20px;
+    color: red;
+    text-align: center;
+    font-weight: bolder;
+    font-size: large;
+}

@@ -10,8 +10,10 @@ public interface BoardService {
 
     List<BoardDto> getList() throws Exception;
 
-    // 페이징 처리 메서드
-    List<BoardDto> getPage(Map map) throws Exception;
+    int remove(Integer boardNo, String writer) throws Exception;
 
     int getCount() throws Exception;
+
+    // 페이징 처리 메서드
+    List<BoardDto> getPage(Map map) throws Exception;
 }
