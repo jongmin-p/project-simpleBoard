@@ -6,9 +6,13 @@ import java.util.List;
 import java.util.Map;
 
 public interface BoardService {
+    int write(BoardDto boardDto) throws Exception;
+
     BoardDto read(Integer boardNo) throws Exception;
 
     List<BoardDto> getList() throws Exception;
+
+    int modify(BoardDto boardDto) throws Exception;
 
     int remove(Integer boardNo, String writer) throws Exception;
 

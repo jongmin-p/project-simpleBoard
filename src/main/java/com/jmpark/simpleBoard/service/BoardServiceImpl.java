@@ -16,6 +16,12 @@ public class BoardServiceImpl implements BoardService {
 
 
     @Override
+    public int write(BoardDto boardDto) throws Exception {
+        // throw new Exception("test");         // <-   게시글 작성 실패 테스트용
+        return boardDao.insert(boardDto);
+    }
+
+    @Override
     public BoardDto read(Integer boardNo) throws Exception {
         BoardDto boardDto = boardDao.select(boardNo);
         boardDao.increaseViewCnt(boardNo);
@@ -26,6 +32,11 @@ public class BoardServiceImpl implements BoardService {
     @Override
     public List<BoardDto> getList() throws Exception {
         return boardDao.selectAll();
+    }
+
+    @Override
+    public int modify(BoardDto boardDto) throws Exception {
+        return boardDao.update(boardDto);
     }
 
     @Override

@@ -22,10 +22,14 @@
     <form action="" id="form">
         <input type="hidden" name="boardNo" value="${boardDto.boardNo}">
 
-        <div class="writer">
-            <h3>작성자</h3>
-            <input type="text" name="writer" value="${boardDto.writer}" readonly>
-        </div>
+        <%-- 글쓰기 모드가 아닐 때만(즉, 읽기 모드일 때만)   작성자 보이도록 --%>
+        <%-- 글쓰기 모드일 때는 작성자 안 보이게 --%>
+        <c:if test="${mode != 'new'}">
+            <div class="writer">
+                <h3>작성자</h3>
+                <input type="text" name="writer" value="${boardDto.writer}" readonly>
+            </div>
+        </c:if>
 
         <div class="title">
             <h3>제목</h3>
@@ -39,10 +43,11 @@
 
 
         <div class="button">
-            <%-- 글쓰기 모드 일 때만 '글쓰기' 버튼 보이도록 --%>
+            <%-- 글쓰기 모드 일 때만 '등록' 버튼 보이도록 --%>
             <c:if test="${mode == 'new'}">
-                <button type="button" id="writeBtn">글쓰기</button>
+                <button type="button" id="writeBtn">등록</button>
             </c:if>
+
                 <%-- 지금 접속해있는 유저가 해당 게시글의 작성자라면 수정/삭제 버튼 보여줌 --%>
                 <%-- mode == null  이거 없으면, 글쓰기 버튼 눌렀을 때도, 수정/버튼이 생김 --%>
                 <c:if test="${currentUser == boardDto.writer && mode == null}">
@@ -57,6 +62,13 @@
     </form>
 
     <script>
+        let msg = "${msg}";
+
+        if(msg == "WRT_ERR") {
+            alert("게시글 등록에 실패했습니다. 다시 시도해 주세요.");
+        }
+
+
         $(document).ready(function() {
 
             // 기존에 보던 게시판 페이지로 이동.
@@ -103,6 +115,10 @@
                     $('textarea').attr('readonly', false);              // 본문 내용
                     $('#modifyBtn').html('등록');                        // 수정이라는 문구를 등록이라는 문구로
                     $('h2').html('게시물 수정');
+
+                    // 수정 버튼 눌렀을 때는 읽기 모드랑 색깔 다르게 해서 가독성 좋게
+                    $('input[name=title]').css("background-color", "skyblue");
+                    $('textarea').css("background-color", "skyblue");
 
                     return ;       // 수정 상태일 때는 위의 것들만 바꾸고  빠져나가야 함. 이거 안하면 전송됨.
                 }

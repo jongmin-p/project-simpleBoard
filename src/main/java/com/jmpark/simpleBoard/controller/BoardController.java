@@ -24,6 +24,74 @@ public class BoardController {
     @Autowired BoardService boardService;
 
 
+    // 게시글 수정 처리
+    @PostMapping("/modify")
+    public String modify(BoardDto boardDto, Model m, HttpSession session, RedirectAttributes rattr) {
+        String writer = (String)session.getAttribute("id");
+        boardDto.setWriter(writer);
+
+        try {
+            int rowCnt = boardService.modify(boardDto);
+
+            if(rowCnt != 1) {
+                throw new Exception("수정 실패!");
+            }
+
+            // m.addAttribute("msg", "MOD_OK");
+            rattr.addFlashAttribute("msg", "MOD_OK");
+
+        } catch (Exception e) {
+            e.printStackTrace();
+
+            m.addAttribute("boardDto", boardDto);
+            m.addAttribute("msg", "MOD_ERR");
+
+            // 실패
+            return "redirect:/board/board";
+        }
+
+        // 수정 성공
+        return "redirect:/board/list";
+    }
+
+    // 게시글 생성 처리
+    @PostMapping("/write")
+    public String write(BoardDto boardDto, Model m, HttpSession session, RedirectAttributes rattr) {
+        String writer = (String)session.getAttribute("id");
+        boardDto.setWriter(writer);
+
+        try {
+            int rowCnt = boardService.write(boardDto);
+
+            if(rowCnt != 1) {
+                throw new Exception("작성 실패!");
+            }
+
+            // m.addAttribute("msg", "WRT_OK");
+            rattr.addFlashAttribute("msg", "WRT_OK");
+
+        } catch (Exception e) {
+            e.printStackTrace();
+
+            m.addAttribute("boardDto", boardDto);
+            m.addAttribute("msg", "WRT_ERR");
+
+            return "/board/board";
+        }
+
+        // 생성 성공
+        return "redirect:/board/list";
+    }
+
+    // 게시글 생성 뷰페이지로 이동
+    @GetMapping("/write")
+    public String write(Model m) {
+        // board.jsp 는 현재 읽기와 쓰기 동시에 사용 가능하도록 설계함.
+        // mode == new 이면 board.jsp 는 글쓰기 페이지로 변함.
+        m.addAttribute("mode", "new");
+        return "board/board";
+    }
+
     // 게시글 삭제 메서드
     @PostMapping("/remove")
     public String remove(Integer boardNo, Integer page, Integer pageSize, Model m, HttpSession session, RedirectAttributes rattr) {

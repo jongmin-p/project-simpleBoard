@@ -7,8 +7,12 @@ import java.util.Map;
 
 public interface BoardDao {
 
+    int insert(BoardDto boardDto) throws Exception;
+
     // 특정 게시글 하나 조회
     BoardDto select(Integer boardNo) throws Exception;
+
+    int update(BoardDto boardDto) throws Exception;
 
     // 게시글 삭제
     int delete(Integer boardNo, String writer) throws Exception;

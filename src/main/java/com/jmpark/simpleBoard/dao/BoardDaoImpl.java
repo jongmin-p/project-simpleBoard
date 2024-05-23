@@ -17,6 +17,11 @@ public class BoardDaoImpl implements BoardDao {
     String namespace = "com.jmpark.simpleBoard.dao.BoardMapper.";
 
 
+    @Override
+    public int insert(BoardDto boardDto) throws Exception {
+        return session.insert(namespace + "insert", boardDto);
+    }
+
     // 특정 게시글 하나 조회
     @Override
     public BoardDto select(Integer boardNo) throws Exception {
@@ -26,6 +31,11 @@ public class BoardDaoImpl implements BoardDao {
     @Override
     public List<BoardDto> selectAll() throws Exception {
         return session.selectList(namespace + "selectAll");
+    }
+
+    @Override
+    public int update(BoardDto boardDto) throws Exception {
+        return session.update(namespace + "update", boardDto);
     }
 
     @Override
