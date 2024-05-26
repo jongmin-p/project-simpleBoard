@@ -18,17 +18,10 @@ public class BoardDto {
 
     public BoardDto() { }
 
-    public BoardDto(Integer boardNo, String title, String content, String writer, int viewCnt, int commentCnt, char status, Date regDate, Date modDate, Date deleteDate) {
-        this.boardNo = boardNo;
+    public BoardDto(String title, String content, String writer) {
         this.title = title;
         this.content = content;
         this.writer = writer;
-        this.viewCnt = viewCnt;
-        this.commentCnt = commentCnt;
-        this.status = status;
-        this.regDate = regDate;
-        this.modDate = modDate;
-        this.deleteDate = deleteDate;
     }
 
     @Override
