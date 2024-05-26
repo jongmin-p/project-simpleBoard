@@ -49,6 +49,11 @@ public class BoardDaoImpl implements BoardDao {
         return session.delete(namespace + "delete", map);
     }
 
+    @Override
+    public int deleteAll() throws Exception {
+        return session.delete(namespace + "deleteAll");
+    }
+
     // 페이징 처리
     @Override
     public List<BoardDto> selectPage(Map map) throws Exception {

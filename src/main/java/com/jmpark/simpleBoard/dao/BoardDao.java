@@ -17,6 +17,9 @@ public interface BoardDao {
     // 게시글 삭제
     int delete(Integer boardNo, String writer) throws Exception;
 
+    // 테이블의 모든 데이터 삭제
+    int deleteAll() throws Exception;
+
     List<BoardDto> selectAll() throws Exception;
 
     // 페이징 처리
