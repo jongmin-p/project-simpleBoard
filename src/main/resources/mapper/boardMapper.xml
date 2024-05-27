@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.jmpark.simpleBoard.dao.BoardMapper">
+    <insert id="insert" parameterType="BoardDto">
+        INSERT INTO board (title, content, writer, status)
+        VALUES (#{title}, #{content}, #{writer}, 'Y')
+    </insert>
+
+
+    <select id="select" parameterType="int" resultType="BoardDto">
+        SELECT boardNo,
+               title,
+               content,
+               writer,
+               viewCnt,
+               commentCnt,
+               status,
+               regDate,
+               modDate,
+               deleteDate
+        FROM board
+        WHERE boardNo = #{boardNo}
+    </select>
+
+
+    <!-- 게시글 전부 다 가져오는데, 게시판 목록 보여줄 때, 등록일의 역순으로 그리고 번호도 역순으로 기준으로 해서 정렬 -->
+    <select id="selectAll" resultType="BoardDto">
+        SELECT boardNo,
+               title,
+               content,
+               writer,
+               viewCnt,
+               commentCnt,
+               status,
+               regDate,
+               modDate,
+               deleteDate
+        FROM board
+        ORDER BY regDate DESC, boardNo DESC
+    </select>
+
+
+    <!-- 한 페이지에 게시글 목록들을 나타내줌 -->
+    <!-- 페이징 처리 (값을 2개[offset, pageSize] 받아야 해서, 파라미터 타입을 Map 으로) -->
+    <!-- Map 에 담아서 전달하면 여기서 알아서 값을 꺼내서 쓴다. (키값이랑 일치해야 함 [offset, pageSize]) -->
+    <select id="selectPage" parameterType="map" resultType="BoardDto">
+        SELECT boardNo,
+               title,
+               content,
+               writer,
+               viewCnt,
+               commentCnt,
+               status,
+               regDate,
+               modDate,
+               deleteDate
+        FROM board
+        ORDER BY regDate DESC, boardNo DESC
+            LIMIT #{offset}, #{pageSize}
+    </select>
+
+
+    <!-- 게시글 전체 "개수" 가져 옴 (total count) -->
+    <select id="count" resultType="int">
+        SELECT count(*) FROM board
+    </select>
+
+
+    <!-- 파라미터로 게시글(BoardDto) 을 주면, 준 내용을 가지고 SQL 실행 -->
+    <update id="update" parameterType="BoardDto">
+        UPDATE board
+        SET    title = #{title}, content = #{content}, modDate = now()
+        WHERE  boardNo = #{boardNo} AND writer = #{writer}
+    </update>
+
+
+    <delete id="delete" parameterType="map">
+        DELETE FROM board
+        WHERE boardNo = #{boardNo} AND writer = #{writer}
+    </delete>
+
+
+    <!-- 게시글 전체 삭제 -->
+    <delete id="deleteAll">
+        DELETE FROM board
+    </delete>
+
+
+    <delete id="deleteForAdmin" parameterType="map">
+        DELETE FROM board
+        WHERE boardNo = #{boardNo}
+    </delete>
+
+
+    <!-- /////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+    <!-- 조회했을 때, 조회수 올림 -->
+    <update id="increaseViewCnt" parameterType="int">
+        UPDATE board
+        SET    viewCnt = viewCnt + 1
+        WHERE  boardNo = #{boardNo}
+    </update>
+
+
+    <!-- 게시글 댓글 개수가 달라지면, boardDao 에 있는 commentCnt 를 올리거나 내려야 함 -->
+    <update id="updateCommentCnt" parameterType="map">
+        UPDATE board
+        SET commentCnt = commentCnt + #{cnt}
+        WHERE boardNo = #{boardNo}
+    </update>
+</mapper>
