@@ -29,4 +29,6 @@ public interface BoardDao {
     int count() throws Exception;
 
     int increaseViewCnt(Integer boardNo) throws Exception;
+
+    int updateCommentCnt(Integer boardNo, int cnt);
 }

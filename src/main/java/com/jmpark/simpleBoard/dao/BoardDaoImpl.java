@@ -70,4 +70,15 @@ public class BoardDaoImpl implements BoardDao {
     public int increaseViewCnt(Integer boardNo) throws Exception {
         return session.update(namespace + "increaseViewCnt", boardNo);
     }
+
+    // 게시글 댓글 개수가 달라지면, boardDao 에 있는 commentCnt 를 올리거나 내려야 하는 메서드
+    @Override
+    public int updateCommentCnt(Integer boardNo, int cnt) {
+        Map map = new HashMap();
+
+        map.put("cnt", cnt);
+        map.put("boardNo", boardNo);
+
+        return session.update(namespace + "updateCommentCnt", map);
+    }
 }
