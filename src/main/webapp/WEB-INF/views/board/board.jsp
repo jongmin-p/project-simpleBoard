@@ -55,10 +55,15 @@
                     <button type="button" id="removeBtn">삭제</button>
                 </c:if>
 
-
-            <%-- 목록 버튼은 공통 버튼 --%>
-            <button type="button" id="listBtn">목록</button>
+                <%-- 목록 버튼은 공통 버튼 --%>
+                <button type="button" id="listBtn">목록으로</button>
+                <br><br>
         </div>
+
+        <%-- 댓글 파트 추가 (읽기 모드일 때만) --%>
+        <c:if test="${mode != 'new'}">
+            <jsp:include page="/WEB-INF/views/include/comment.jsp" />
+        </c:if>
     </form>
 
     <script>

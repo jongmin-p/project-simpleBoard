@@ -18,7 +18,11 @@
               <li><a href="<c:url value='/board/list'/>">Board</a></li>
               <%-- 위에서 세팅한 session 변수에 따라 아래가 달라짐 --%>
               <li><a href="<c:url value='${loginOutLink}'/>">${loginOut}</a></li>
-              <li><a href="<c:url value='/signup'/>">Sign Up</a></li>
+
+              <%-- 로그인한 상태라면(session 으로 확인),  Sign Up 탭이 안보이도록 --%>
+              <c:if test="${empty sessionScope.id}">
+                  <li><a href="<c:url value='/signup'/>">Sign Up</a></li>
+              </c:if>
           </ul>
       </div>
   </body>

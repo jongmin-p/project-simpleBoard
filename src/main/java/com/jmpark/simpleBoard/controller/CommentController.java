@@ -24,10 +24,7 @@ public class CommentController {
     public ResponseEntity<String> write(@RequestBody CommentDto commentDto, Integer boardNo, HttpSession session) {
 
         // getAttribute 는 Object 반환하기에, 형변환 필요
-        // String writer = (String)session.getAttribute("id");
-
-        // 일단 로그인 안하니까 하드코딩으로
-        String writer = "asdf";
+        String writer = (String)session.getAttribute("id");
 
         commentDto.setWriter(writer);
         commentDto.setBoardNo(boardNo);
@@ -67,13 +64,10 @@ public class CommentController {
 
     // 4. 댓글을 수정하는 메서드
     @PatchMapping("/comments/{commentNo}")    //    /simpleBoard/comments/31     (PATCH)
-    public ResponseEntity<String> modify(@PathVariable Integer commentNo, @RequestBody CommentDto commentDto) {
+    public ResponseEntity<String> modify(@PathVariable Integer commentNo, @RequestBody CommentDto commentDto, HttpSession session) {
 
         // getAttribute 는 Object 반환하기에, 형변환 필요
-        // String writer = (String)session.getAttribute("id");
-
-        // 일단 로그인 안하니까 하드코딩으로
-        String writer = "asdf";
+        String writer = (String)session.getAttribute("id");
 
         commentDto.setWriter(writer);
         commentDto.setCommentNo(commentNo);
@@ -99,10 +93,7 @@ public class CommentController {
     public ResponseEntity<String> remove(@PathVariable Integer commentNo, Integer boardNo, HttpSession session) {
 
         // getAttribute 는 Object 반환하기에, 형변환 필요
-        // String writer = (String)session.getAttribute("id");
-
-        // 일단 로그인 안하니까 하드코딩으로
-        String writer = "asdf";
+        String writer = (String)session.getAttribute("id");
 
         try {
             int rowCnt = commentService.remove(commentNo, boardNo, writer);

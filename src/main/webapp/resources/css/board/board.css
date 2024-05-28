@@ -54,6 +54,8 @@ input[name="writer"] {
     padding: 20px;
     font-weight: bolder;
     font-size: large;
+
+    margin: 0 auto; /* 가로 가운데 정렬 */
 }
 
 /* 버튼 정렬 */
