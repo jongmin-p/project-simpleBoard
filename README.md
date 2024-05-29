@@ -100,7 +100,7 @@
       - 빈 칸 입력 시
       - 글자수 등 양식 위반 시
       - 이미 존재하는 아이디 입력 시<br/><br/>
-![아이디 검증](https://github.com/jongmin-p/backup-simpleBoard/assets/119127039/88edbd33-ad32-4683-9cec-ec6071ab3668)
+![아이디 검증](https://github.com/jongmin-p/project-simpleBoard/assets/119127039/7c635b34-0562-4cc5-ae73-42386d1fd3b2)
 
 <br/><br/>
 
