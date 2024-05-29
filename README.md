@@ -107,13 +107,13 @@
    - 비밀번호 검증 (가입 버튼 비활성화 케이스)
       - 비밀번호 양식 위반 시
       - 재확인 비밀번호 불일치 시<br/><br/>
-![비밀번호 검증](https://github.com/jongmin-p/backup-simpleBoard/assets/119127039/6cc83f95-e896-4475-8dce-5d4f38b50a0f)
+![비밀번호 검증](https://github.com/jongmin-p/project-simpleBoard/assets/119127039/62145d6d-8dc1-4d4f-892c-9a734e270ac1)
 
 <br/><br/>
 
    - 회원가입 성공 (가입 버튼 활성화)
       - 메인 페이지로 이동<br/><br/>
-![회원가입 성공](https://github.com/jongmin-p/backup-simpleBoard/assets/119127039/908a499f-1413-47da-b1d3-38b16ddc6e13)
+![회원가입 성공](https://github.com/jongmin-p/project-simpleBoard/assets/119127039/690b8ce3-10d1-4133-9836-659b58a7ee5e)
 
 <br/><br/>
 
@@ -121,19 +121,19 @@
    - 로그인 실패
       - 존재하지 않는 아이디를 입력하는 경우
       - 아이디는 존재하나, 비밀번호가 일치하는 경우<br/><br/>
-![로그인 검증](https://github.com/jongmin-p/backup-simpleBoard/assets/119127039/f380b302-d68d-4083-b7fc-8543e9196934)
+![로그인 검증](https://github.com/jongmin-p/project-simpleBoard/assets/119127039/29f1cc6b-b239-418c-ba41-bab260ae1c65)
 
 <br/><br/>
 
    - 로그인 성공
       - 로그인 성공 시, 메인 페이지로 이동
       - 그리고, 우측 상단의 Login 버튼이 Logout 버튼으로 자동으로 변경<br/><br/>
-![로그인 성공](https://github.com/jongmin-p/backup-simpleBoard/assets/119127039/480cb8fb-b418-4e6b-ab0d-3a95fb79473f)
+![로그인 성공](https://github.com/jongmin-p/project-simpleBoard/assets/119127039/f81c6493-8313-4d1f-9390-412a3440a1c0)
 
 <br/><br/>
 
    - '아이디 기억하기' 체크 후, 로그인 성공 시 다음에 로그인 화면으로 돌아오면 자동으로 아이디가 입력돼 있음.<br/>
-![아이디 저장 기능](https://github.com/jongmin-p/backup-simpleBoard/assets/119127039/90b88817-7564-4e21-a1be-73c516cbabd8)
+![아이디 저장 기능](https://github.com/jongmin-p/project-simpleBoard/assets/119127039/333a8222-2420-4d3a-8e82-21ca544fa140)
 
 <br/><br/>
 
@@ -143,48 +143,48 @@
    - Board 탭 클릭 시, 게시판 전체 출력
       - 게시글 조회수 출력
       - 페이징 적용<br/><br/>
-![전체 게시판](https://github.com/jongmin-p/backup-simpleBoard/assets/119127039/8c5285c7-55b9-475d-a9ad-e709ecb0189d)
+![전체 게시판](https://github.com/jongmin-p/project-simpleBoard/assets/119127039/06f2995e-8d27-4e97-8e1e-661983671739)
 
 <br/><br/>
 
    ### 3-4. 게시글
    - '글쓰기' 버튼 클릭 시, 게시글 작성 가능
      - 게시글 작성 후 등록 버튼 클릭 시, 등록 성공 메시지와 함께 전체 게시판에 추가됨<br/><br/>
-![게시글 생성](https://github.com/jongmin-p/backup-simpleBoard/assets/119127039/c0e04cfa-a281-4aa9-9e56-4cc7e7f6dba1)
+![게시글 생성](https://github.com/jongmin-p/project-simpleBoard/assets/119127039/2221c309-e712-42e8-b532-ee407ee94548)
 
 <br/><br/>
 
    - 특정 게시글 클릭 시, 조회 가능
       - 본인이 작성한 게시글이라면, 하단에 '수정', '삭제' 버튼 노출됨<br/><br/>
-![게시글 읽기](https://github.com/jongmin-p/backup-simpleBoard/assets/119127039/5c4faba2-1067-45f3-a59a-92779c00de33)
+![게시글 읽기](https://github.com/jongmin-p/project-simpleBoard/assets/119127039/1babf02a-74d9-4664-8482-8976bde0e3df)
 
 <br/><br/>
 
    - 게시글 수정 버튼 클릭 시, 수정 가능
       - 게시글 작성자 본인만 수정 가능
       - readonly 해제를 이용하여 제목과 내용 변경 가능 (작성자는 자동으로 채워지는거라 변경 불가능)<br/><br/>
-![게시글 수정](https://github.com/jongmin-p/backup-simpleBoard/assets/119127039/1adf1790-29ef-4684-bc0a-6c3ba633455d)
+![게시글 수정](https://github.com/jongmin-p/project-simpleBoard/assets/119127039/a689f060-9f62-4f96-8fdf-053ea62353e3)
 
 <br/><br/>
 
    - 게시글 삭제 버튼 클릭 시, 삭제 가능
       - 게시글 작성자 본인만 삭제 가능
       - 삭제하기 전, 삭제 확인 메세지 출력<br/><br/>
-![게시글 삭제](https://github.com/jongmin-p/backup-simpleBoard/assets/119127039/218d4231-b80b-479b-aaa3-e83f1491d6e3)
+![게시글 삭제](https://github.com/jongmin-p/project-simpleBoard/assets/119127039/80d7bb5b-127e-4413-a7f6-2abe88c80a3e)
 
 <br/><br/>
 
    ### 3-5. 댓글
    - 각 게시글 아래에는 댓글 란이 존재
       - 댓글 작성자 본인만 수정 및 삭제 가능<br/><br/>
-![댓글 생성](https://github.com/jongmin-p/backup-simpleBoard/assets/119127039/c7d23178-41e8-40e9-a46b-7f65490c4147)
+![댓글 생성](https://github.com/jongmin-p/project-simpleBoard/assets/119127039/433f943b-4aa0-4f5a-b909-91786cecf7af)
 
 <br/><br/>
 
    - 댓글 수정 버튼 클릭 시, 팝업 창이 노출됨<br/><br/>
-![댓글 수정](https://github.com/jongmin-p/backup-simpleBoard/assets/119127039/e1fbd962-be2a-4abb-8a6d-906c8c126195)
+![댓글 수정](https://github.com/jongmin-p/project-simpleBoard/assets/119127039/48b77cee-6cb2-4607-a452-7ea5691bb57a)
 
 <br/><br/>
     
    - 댓글 삭제 버튼 클릭 시, 삭제됨<br/><br/>
-![댓글 삭제](https://github.com/jongmin-p/backup-simpleBoard/assets/119127039/00fea462-6ea4-4b04-bcae-92f53cc7bb7f)
+![댓글 삭제](https://github.com/jongmin-p/project-simpleBoard/assets/119127039/dcb8b74d-bc68-40db-9a79-61fb7eab6239)
