@@ -11,7 +11,7 @@
 ### 1-1. 사용 기술 및 개발환경
    - Server : Tomcat9.0
    - DB : MySQL
-   - Framework/flatform : Spring, jQuery, MyBatis
+   - Framework/Flatform : Spring, jQuery, MyBatis
    - Programming Language : Java, HTML/CSS, JavaScript
    - Tool : IDE(IntelliJ), Github<br/><br/>
    
@@ -78,7 +78,7 @@
 | status     	| char     	| 삭제 여부   	|
 | regDate    	| datetime 	| 등록 날짜   	|
 | modDate    	| datetime 	| 수정 날짜   	|
-| deleteDate 	| datetime 	| 삭 날짜   	|
+| deleteDate 	| datetime 	| 삭제 날짜   	|
 
 ### 2-3. 댓글 테이블 (comment)
 | 컬럼명         	| 데이터 타입     	| 컬럼 설명           |
